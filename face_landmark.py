@@ -9,9 +9,9 @@ img = cv2.imread(imagePath)
 
 print("Image shape:", img.shape)
 
-plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-plt.axis('on')
-plt.show()
+# plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+# plt.axis('on')
+# plt.show()
 
 # set dimension for cropping image
 x, y, width, depth = 50, 10, 950, 500
@@ -24,8 +24,8 @@ image_template = image_cropped.copy()
 image_gray = cv2.cvtColor(image_cropped, cv2.COLOR_BGR2GRAY)
 
 # remove axes and show image
-plt.axis("off")
-plt.imshow(image_gray, cmap = "gray")
+# plt.axis("off")
+# plt.imshow(image_gray, cmap = "gray")
 
 haarcascade = "./haarcascade_frontalface_default.xml"
 
